@@ -29,6 +29,19 @@ body{
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    transform: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover .card-image{
+    background-color: #3498db;
+    color: white;
+    transition: 0.3s;
 }
 
 .card img {
