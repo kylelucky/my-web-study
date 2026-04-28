@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>   
+    <meta charset="UTF-8">
+    <title>Flexbox 메뉴바 실습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav{
+            background-color: skyblue;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover{
+            color: #ff9900;
+            
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo>MyBrand</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
