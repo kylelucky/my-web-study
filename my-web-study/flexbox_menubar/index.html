@@ -47,7 +47,7 @@
 <body>
 
     <nav>
-        <a href="#" class="logo>MyBrand</a>
+        <a href="#" class="logo">MyBrand</a>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -55,5 +55,19 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        const menuItems = document.querySelectorAll('.nav-links a');
+        menuItems.forEach((item) => {
+            item.addEventListener('click', function(event) {
+                //event.preventDefault();
+                const menuName = this.textContent;
+
+                alert(menuName + ' 메뉴가 클릭되었습니다!');
+
+                console.log(menuName + ' 메뉴가 클릭되었습니다!');
+            });
+        })
+    </script>
 </body>
 </html>
