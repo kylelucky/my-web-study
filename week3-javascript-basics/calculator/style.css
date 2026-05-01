@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #1a1a2e; font-family: Arial, sans-serif; }
+.calculator { width: 320px; background: #16213e; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.display { padding: 20px 24px 12px; text-align: right; min-height: 100px; display: flex; flex-direction: column; justify-content: flex-end; }
+.expression { font-size: 14px; color: #888; min-height: 20px; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.result { font-size: 48px; color: #fff; font-weight: 300; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #0f3460; }
+.btn { padding: 20px; font-size: 18px; border: none; cursor: pointer; background: #16213e; color: #fff; transition: background 0.1s; font-family: inherit; }
+.btn:hover { background: #1a2850; } .btn:active { background: #0d1b38; }
+.btn-clear { background: #e74c3c; color: #fff; } .btn-clear:hover { background: #c0392b; }
+.btn-special { background: #2c3e50; color: #bdc3c7; } .btn-special:hover { background: #34495e; }
+.btn-operator { background: #0f3460; color: #e94560; font-weight: bold; }
+.btn-operator:hover { background: #1a4a80; } .btn-operator.active { background: #e94560; color: #fff; }
+.btn-zero { grid-column: span 2; text-align: left; padding-left: 24px; }
+.btn-equals { background: #e94560; color: #fff; font-weight: bold; } .btn-equals:hover { background: #c0392b; }

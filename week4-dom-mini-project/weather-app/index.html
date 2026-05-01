@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤 날씨 정보</h1>
+        <div class="search-area">
+            <input type="text" id="cityInput" placeholder="도시 이름 (영문)" value="Seoul">
+            <button id="searchBtn">검색</button>
+        </div>
+        <div class="card" id="weatherCard">
+            <div id="loading">날씨 정보를 불러오는 중...</div>
+            <div class="weather-content" id="weatherContent" style="display:none">
+                <div class="city-name" id="cityName"></div>
+                <div class="weather-icon" id="weatherIcon"></div>
+                <div class="temperature" id="temperature"></div>
+                <div class="description" id="description"></div>
+                <div class="details">
+                    <div class="detail-item"><span class="label">체감 온도</span><span class="value" id="feelsLike"></span></div>
+                    <div class="detail-item"><span class="label">습도</span><span class="value" id="humidity"></span></div>
+                    <div class="detail-item"><span class="label">바람</span><span class="value" id="wind"></span></div>
+                    <div class="detail-item"><span class="label">최고 / 최저</span><span class="value" id="minmax"></span></div>
+                </div>
+            </div>
+            <div class="error" id="error" style="display:none"></div>
+        </div>
+        <p class="note">* wttr.in 무료 날씨 API 사용 (API 키 불필요)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

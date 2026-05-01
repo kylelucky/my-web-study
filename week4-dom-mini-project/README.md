@@ -19,8 +19,8 @@
 
 | 폴더 | 내용 | 상태 |
 |------|------|------|
-| `todo-list/` | To-Do List 앱 제작 | 🔲 예정 |
-| `weather-app/` | 날씨 정보 앱 (API 연동) | 🔲 예정 |
+| `todo-list/` | To-Do List 앱 (LocalStorage 연동) | ✅ 완료 |
+| `weather-app/` | 날씨 정보 앱 (wttr.in Fetch API) | ✅ 완료 |
 
 ## Troubleshooting
 
